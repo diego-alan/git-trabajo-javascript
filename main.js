@@ -28,7 +28,7 @@ class UsuarioModel {
   }
 
   async addUsuario(usuarioText) {
-    const query = 'INSERT  INTO usuario(task) VALUES ($1) RETURNING *';
+    const query = 'INSERT INTO usuario(nombre, edad) VALUES($1, $2) RETURNING *';
     const values = [usuarioText]
     const res = await client.query(query, values) 
     return res;
