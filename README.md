@@ -14,4 +14,4 @@
 	nombre varchar(1000) NOT NULL,
 	edad integer NOT NULL
 
-
+se debe istalar en la maqui node_modules
